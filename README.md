@@ -26,7 +26,7 @@ The following **additional** features are implemented:
 
 ## Video Walkthrough
 
-[Video Walkthrough]()
+[Video Walkthrough](todo-app-walkthrough.gif)
 
 ## Notes
 
