@@ -32,6 +32,7 @@
 		CB9D9ED0292483BC00F8F51B /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		ED7EC37529F0EFD000146345 /* TaskComposeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TaskComposeViewController.swift; path = "ios101-project7-task/TaskComposeViewController.swift"; sourceTree = SOURCE_ROOT; };
 		EDE386CF29F7892D007E714F /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		F7E4C3222AEFAFEA00B03586 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +49,7 @@
 		CB602B8C29247359006C6727 = {
 			isa = PBXGroup;
 			children = (
+				F7E4C3222AEFAFEA00B03586 /* README.md */,
 				CB602B9729247359006C6727 /* ios101-project7-task */,
 				CB602B9629247359006C6727 /* Products */,
 			);

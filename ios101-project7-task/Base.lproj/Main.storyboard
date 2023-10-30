@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Wg7-xV-89h">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22152" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ase-du-zsp">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22127"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -117,13 +117,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1938" y="-715"/>
+            <point key="canvasLocation" x="2866.1538461538462" y="-715.16587677725113"/>
         </scene>
-        <!--Item-->
+        <!--Tasks-->
         <scene sceneID="J7Q-nV-HWx">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Wg7-xV-89h" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Kwk-ro-rCO"/>
+                    <tabBarItem key="tabBarItem" title="Tasks" image="note.text" catalog="system" id="Kwk-ro-rCO"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="DRp-lg-aqr">
                         <rect key="frame" x="0.0" y="47" width="390" height="96"/>
@@ -139,7 +139,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ATm-zN-Jih" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1188" y="-715"/>
+            <point key="canvasLocation" x="2116.9230769230767" y="-715.16587677725113"/>
         </scene>
         <!--New Task-->
         <scene sceneID="Ioe-a1-6Ta">
@@ -208,7 +208,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rLa-nr-FEm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3569" y="-715"/>
+            <point key="canvasLocation" x="4496.9230769230771" y="-715.16587677725113"/>
         </scene>
         <!--Calendar-->
         <scene sceneID="nUV-mr-s5n">
@@ -339,13 +339,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9sH-g6-3yG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2803" y="-716"/>
+            <point key="canvasLocation" x="3730.7692307692305" y="-716.5876777251184"/>
         </scene>
-        <!--Item-->
+        <!--Calendar-->
         <scene sceneID="Ijw-fb-yMF">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="daT-oS-uAW" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="t9z-Gp-dDc"/>
+                    <tabBarItem key="tabBarItem" title="Calendar" image="calendar" catalog="system" id="t9z-Gp-dDc"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="0bE-gs-in2">
                         <rect key="frame" x="0.0" y="47" width="390" height="44"/>
@@ -360,10 +360,30 @@
             </objects>
             <point key="canvasLocation" x="1188" y="16"/>
         </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="UeX-U3-zTp">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Ase-du-zsp" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6Uf-aO-7og">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Wg7-xV-89h" kind="relationship" relationship="viewControllers" id="gVO-Bs-xOB"/>
+                        <segue destination="daT-oS-uAW" kind="relationship" relationship="viewControllers" id="f8x-gR-0Zc"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ncc-nA-JON" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1187.6923076923076" y="-715.16587677725113"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="calendar" catalog="system" width="128" height="107"/>
         <image name="circle" catalog="system" width="128" height="123"/>
         <image name="circle.inset.filled" catalog="system" width="128" height="123"/>
+        <image name="note.text" catalog="system" width="128" height="107"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
